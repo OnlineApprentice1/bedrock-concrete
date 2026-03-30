@@ -31,7 +31,7 @@
 ### Task 5.1: Hero Section
 - **File:** `src/components/home/Hero.tsx`
 - **Layout:** SectionFullBleed. Black background with flowing curved SVG shape (magma river) in crimson-to-orange gradient crossing mid-viewport horizontally. Business name "BEDROCK CONCRETE" in massive type-hero above the flow. Subtitle below. CTA buttons below subtitle. The SVG gradient subtly animates (background-position shift). Parallax on the SVG layer.
-- **Animation:** fade-up+parallax — text fades up, SVG has parallax depth on scroll.
+- **Animation:** fade-up+parallax — text fades up, SVG has parallax depth on scroll. Use GradientSweep effect component for subtle ambient background glow behind the magma river.
 - **Anti-pattern:** No centred-text-over-stock-photo. No static flat hero. The magma river SVG MUST be visible and animated.
 - **Responsive:** Mobile: SVG scales, text stacks vertically, buttons full-width. Desktop: text left-aligned in upper portion, SVG spans full width.
 - **Acceptance:** Magma SVG visible with gradient animation, parallax working, type-hero for headline, btn-profile for primary CTA, btn-profile-ghost for secondary, section-spacious density, section-bg-deep background.
