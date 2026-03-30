@@ -1,0 +1,11 @@
+# Phase 3 — Plan Decisions
+- total-tasks: 14
+- tier-breakdown: 3 Tier-1, 11 Tier-2
+- homepage-sections: 7 (hero, stats, services, process, testimonials, faq-preview, cta)
+- inner-pages: services, about, contact, faq
+- anti-sameness: passed (0 violations across 9 checks)
+- layout-variety: 6 distinct layouts across 7 homepage sections (FullBleed, StatsBar, OffsetGrid, Zigzag, AsymmetricSplit, Editorial)
+- container-widths: max-w-4xl (stats, faq), max-w-6xl (services, testimonials), max-w-7xl (process), full-bleed (hero, cta)
+- density-rhythm: spacious (hero, cta) → compact (stats) → standard (services, process, testimonials) → compact (faq)
+- section-backgrounds: deep (hero, stats, cta), gradient (services, testimonials), texture (process, faq)
+- creative-vision-ratio: ~40% across Tier-2 prompts
