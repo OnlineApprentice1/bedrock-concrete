@@ -1,0 +1,11 @@
+# Phase 2 — Design System Decisions
+- profile: bold (profile-bold.css)
+- palette-params: hue=10 (crimson), chroma=0.22, dark-dominant
+- theme-name: magma
+- heading-font: Anton (weight 400 — Anton only comes in 400)
+- body-font: Source Sans 3 (weight 400/600)
+- archetype-overrides: grain-opacity=0.06, lava-channel-dividers, hex-clip for basalt cards, magma-glow-hover
+- effects-copied: WaveDivider, GradientSweep, RingBorder, GlowCursor, TracePath, ParticleField
+- layouts-copied: all 8 templates
+- gradient-style: bold opacity (0.15-0.25), steep angles (150deg), off-centre mesh
+- build-verified: yes

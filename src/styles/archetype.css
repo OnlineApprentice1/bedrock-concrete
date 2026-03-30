@@ -1,0 +1,85 @@
+/* ============================================
+   Magma Flow Industrial Bold — Site-Specific Additions
+   ============================================
+   Adds magma/volcanic design elements on top of profile-bold.css.
+   Does NOT redefine card/badge/button/divider classes.
+   ============================================ */
+
+/* Grain overlay — coarse industrial grain at high opacity */
+.grain-overlay {
+  position: relative;
+}
+
+.grain-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+/* Lava channel divider — thick curved SVG gradient bar */
+.lava-channel {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--clr-primary),
+    var(--clr-accent),
+    var(--clr-primary)
+  );
+  background-size: 200% 100%;
+  border-radius: 0;
+  margin-block: 0;
+}
+
+/* Hexagonal clip for basalt-column cards */
+.hex-clip {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Magma glow hover — crimson radial glow on interactive elements */
+.magma-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.magma-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    color-mix(in oklch, var(--clr-primary) 20%, transparent),
+    transparent 60%
+  );
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.magma-glow:hover::after {
+  opacity: 1;
+}
+
+/* Image treatment: duotone crimson filter */
+.img-duotone {
+  filter: grayscale(100%) contrast(1.1);
+  mix-blend-mode: luminosity;
+}
+
+/* Image treatment: gradient mask fade */
+.img-gradient-mask {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Image treatment: elevated with hard shadow */
+.img-elevated {
+  box-shadow: 8px 8px 0 color-mix(in oklch, var(--clr-primary) 30%, transparent);
+}

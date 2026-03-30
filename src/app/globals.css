@@ -1,26 +1,31 @@
 @import "tailwindcss";
+@import "../styles/typography.css";
+@import "../styles/colour-tokens.css";
+@import "../styles/profile.css";
+@import "../styles/archetype.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui/theme" {
+  name: "magma";
+  default: true;
+  primary: oklch(50% 0.22 10);
+  secondary: oklch(15% 0.01 260);
+  accent: oklch(68% 0.18 50);
+  neutral: oklch(22% 0.01 260);
+  base-100: oklch(10% 0.01 260);
+  base-200: oklch(15% 0.01 260);
+  base-300: oklch(22% 0.01 260);
+  base-content: oklch(95% 0.01 260);
+  info: oklch(60% 0.15 250);
+  success: oklch(65% 0.20 145);
+  warning: oklch(75% 0.18 85);
+  error: oklch(55% 0.22 25);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading: "Anton", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }

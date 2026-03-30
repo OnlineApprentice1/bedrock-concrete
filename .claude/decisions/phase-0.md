@@ -1,0 +1,16 @@
+# Phase 0 — Intake Decisions
+- business: "Bedrock Concrete Solutions"
+- trade: concrete & foundation work
+- location: Thunder Bay, ON
+- mood: powerful, grounded, industrial
+- archetype: magma-flow-industrial-bold
+- hero-concept: magma-river-viewport — flowing curved SVG in crimson-to-orange gradient on black
+- palette-family: bold
+- heading-font: Anton
+- body-font: Source Sans 3
+- section-order: hero → stats → services → process → testimonials → faq-preview → cta
+- signature-moves: lava-channel-dividers, basalt-column-cards, magma-glow-hover
+- animation-assignments: hero=fade-up+parallax, stats=scale-up+counter+pop, services=slide-alternate+cascade, process=clip-reveal+cascade, testimonials=blur-sharpen+wave, faq=rotate-in, cta=none
+- services-count: 5
+- faq-count: 8
+- inner-page-layouts: services=sidebar-nav, about=story-image, contact=form-sidebar
